@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEVMASTER FE</title>
+    </head>
+    <body>
+
+        <pre>
+            I, Giới thiệu FE 
+            II, Khởi động với html 
+
+                1, Tạo file html
+                    tên_file  .  html : lưu ý tên file không - chứa kí tự đặc biệt,  
+                                                             - bắt đầu bằng số
+                                                       hạn chế chứa dấu cách
+                2, Cấu trúc của 1 trang html
+                    - 2 phần: head: chứa các thẻ meta; thẻ link, thẻ srcipts (các thẻ nội dung nhúng vào trang web ) 
+                              body: hiển thị nội dung bằng mắt nhìn của người dùng thông qua các element
+                                    cũng có thể chứa các thẻ link, thẻ script...
+                    *) các element đa số yêu cầu cặp thẻ đóng mở trừ một số thẻ đặc biệt: img, input, hr, br,...
+                
+                3, Làm quen với các element cụ thẻ
+                    - hiển thị nội dung văn bản: p /text, span,...
+                    - hiển thị tiêu đề: h1, h2, h3, h4, h5, h6 
+                    - hiển thị đường kẻ: hr 
+                    - thẻ xuống dòng: br 
+                    - thẻ danh sách: ul-li ; ol-li, dl-dt-dd....
+                    - định dạng văn bản: văn bản in đậm - thẻ b
+                                         văn bản in nghiêng: thẻ i 
+                                         văn bản gạch chân : thẻ u 
+                    - thẻ hiển thị hình ảnh:
+                        +, tên element: img (không có thẻ đóng)
+                        +, một số thuộc tính quan trọng: 
+                                    - src: địa chỉ hình ảnh cần được hiển thị
+                                    - alt: hiển thị tên ảnh trong trường hợp không biểu diễn được hình ảnh
+                    - thẻ dẫn đường liên kết: 
+                        +, tên element: a 
+                        + một số thuộc tính cần lưu ý: 
+                                     - href: giá trị <=> url cần điều hướng
+                                     - title: hiển thị ghi chú cho thẻ a 
+                                     - target: tạo tab mới hay giữ nguyên tab hiện tại 
+                    ........................
+
+                    4, Kết hợp các element để giải quyết bài toán
+                        kết hợp các element: danh sách, liên kết, nội dung/hình ảnh
+        </pre>
+        
+        <hr>
+
+        <h2>BT1: luyện tập sử dụng các element đầu tiên (văn bản)</h2>
+        <p>
+            If <b>you can read</b> only one chapter to get going with Git, this is it. This chapter covers every basic command you need to do the vast majority of the things you’ll eventually spend your time doing with Git. By the end of the chapter, you should be able to configure and initialize a repository, begin and stop tracking files, and stage and commit changes. We’ll also show you how to set up Git to ignore certain files and file patterns, how to undo mistakes quickly and easily, how to browse the history of your project and view changes between commits, and how to push and pull from remote repositories.
+        </p>
+
+        <h2>BT2: luyện tập sử dụng thẻ danh sách (ul-li/ol-li)</h2>
+        <h4>Ví dụ</h4>
+        <ul type="square">
+            <li>
+                <a href="https://devmaster.edu.vn/" title="đi tới trang chủ devmaster" target="_blank">Trang chủ</a>
+            </li>
+            <li>
+                <a href="https://devmaster.edu.vn/" title="đi tới trang chủ devmaster" target="_blank">
+                     Sản phẩm
+                </a>
+            </li>
+            <li>
+                <a href="https://devmaster.edu.vn/" title="đi tới trang chủ devmaster" target="_blank"> Dịch vụ</a>
+            </li>
+            <li>
+                <a href="https://devmaster.edu.vn/" title="đi tới trang chủ devmaster" target="_blank"> Sản phẩm</a>
+            </li>
+        </ul>
+
+        <h4>Thực hành</h4>
+        <ol >
+            <li>Trang chủ</li>
+            <li>Sản phẩm</li>
+            <li>Dịch vụ</li>
+            <li>Liên hệ</li>
+        </ol>
+
+        <h4>Thử sức với dl-dt-dd</h4>
+        <dl>
+            <dt>Mục I</dt>
+            <dd>Mục 1.1</dd>
+            <dd>Mục 1.1</dd>
+            <dt>Mục II</dt>
+                <dd>Mục 2.1</dd>
+                <dd>Mục 2.1</dd>
+                
+        </dl>
+
+        <h4>Thẻ img</h4>
+        <img src="../images/home/banner.png" alt="dev">
+        
+        <img src="https://devmaster.edu.vn/uploads/images/2020/11/20-11-2020.jpg" alt="dev">
+
+        <h4>Thẻ a: </h4>
+        <a href="https://devmaster.edu.vn/" title="devmaster" target="_blank"> 
+            <img src="../images/home/banner.png" alt="dev">
+
+        </a>
+
+    </body>
+</html>
