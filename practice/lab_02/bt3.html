@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: absolute;
+            width: 800px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #f4f4f4;
+        }
+        .head_content{
+            display: flex;
+        }
+        .nav_search{
+            position: absolute;
+            right:0px;
+        }
+        #status{
+            color:  #35a947 ;
+        }
+        table{
+            text-align: center;
+            width: 100%;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head_content">
+            <input type="number" value="15" style="width: 50px; height: 22px;">
+            <div class="nav_search">
+                <input type="search" placeholder="Nhập tiêu đề tìm kiếm -> Nhấn Enter" style="width: 250px;height: 28px; right: 0;">
+                <input type="button" value="+Thêm mới" style="color: #fff; background-color:#3baea4; height: 28px; border: none;">   
+            </div>
+        </div>
+        <div style="padding-top: 16px ;">
+            <table border="1" cellpadding="10" cellspacing="1">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên đặc tính kĩ thuật</th>
+                        <th>Ngày sửa</th>
+                        <th>Thứ tự</th>
+                        <th>Trạng thái</th>
+                        <th>Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Đặc trưng</td>
+                        <td>20/07/2020</td>
+                        <td>1</td>
+                        <td id="status">Hoạt động</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Thông số</td>
+                        <td>20/07/2020</td>
+                        <td>2</td>
+                        <td id="status">Hoạt động</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bảo quản</td>
+                        <td>20/07/2020</td>
+                        <td>3</td>
+                        <td id="status">Hoạt động</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bảo hành</td>
+                        <td>20/07/2020</td>
+                        <td>4</td>
+                        <td id="status">Hoạt động</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cam kết</td>
+                        <td>20/07/2020</td>
+                        <td>5</td>
+                        <td id="status">Hoạt động</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="6" style="text-align: left;">Tổng số có: 5 đặc tính kĩ thuật</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            Trang 1/1
+        </p>
+        
+    </div>
+    
+</body>
+</html>
