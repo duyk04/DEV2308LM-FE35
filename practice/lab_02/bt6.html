@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_02_bt6</title>
+    <style>
+        .container{
+            position: absolute;
+            width: 400px;
+            height: 520px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p{
+            margin-top: 0;
+            padding-left: 10px;
+        }
+        .head-content{
+            color: #fff;
+            background-color: #d55156;
+            line-height: 40px;
+        }
+        .main-content{
+            margin-left: 8px;
+        }
+        .footer-content{
+            position: absolute;
+            right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="head-content">
+                <p>Thông tin danh mục chất liệu</p>
+            </div>
+            <div class="main-content">
+                <table cellspacing="10">
+                    <tr>
+                        <td>Tên (title)</td>
+                    </tr>
+                    <tr>
+                       <td>
+                            <input type="text" style="width: 360px; height: 30px; border: 1px solid #ccc;">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>Từ khóa SEO</td>
+                    </tr>
+                    <tr>
+                       <td>
+                            <input type="text" style="width: 360px; height: 30px; border: 1px solid #ccc;">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>Mô Tả SEO</td>
+                    </tr>
+                    <tr>
+                       <td>
+                            <input type="text" style="width: 360px; height: 30px; border: 1px solid #ccc;">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>Ghi chú</td>
+                    </tr>
+                    <tr>
+                       <td>
+                            <textarea name="" id="" cols="42" rows="5" style="border: 1px solid #ccc;"></textarea>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Trạng thái 
+                            <input type="radio" name="trangthai" style="margin-left: 16px;">Hoạt động
+                            <input type="radio" name="trangthai" style="margin-left: 16px;">Đang khóa
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="footer-content">
+                <input type="reset" value="Nhập lại" style="color: #fff; background-color: #d55156; border: none; height: 28px; ">
+                <input type="submit" value="Ghi lại" style="color: #fff; background-color: rgb(29, 190, 118);border: none; height: 28px">
+            </div>
+        </form>
+    </div>
+   
+</body>
+</html>
