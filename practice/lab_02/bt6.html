@@ -7,90 +7,85 @@
     <style>
         .container{
             position: absolute;
-            width: 400px;
-            height: 520px;
+            width: 650px;
+            height: 440px;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
-            background-color: #fff;
+            background-color: #f4f4f4;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        p{
-            margin-top: 0;
-            padding-left: 10px;
-        }
-        .head-content{
-            color: #fff;
-            background-color: #d55156;
-            line-height: 40px;
-        }
-        .main-content{
-            margin-left: 8px;
-        }
-        .footer-content{
-            position: absolute;
-            right: 10px;
-        }
         
+        }
+        label{
+            display: inline-block;
+            width: 140px;
+            margin-bottom: 10PX;
+            margin-left: 12PX;
+        }
+        .button{
+            position: absolute;
+            left: 300px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <form action="">
-            <div class="head-content">
-                <p>Thông tin danh mục chất liệu</p>
+            <h2>Đăng ký thông tin người sử dụng</h2>
+            <div>
+                <label for="name">Tên đăng nhập</label>
+                <input type="text" id="name" name="name">
             </div>
-            <div class="main-content">
-                <table cellspacing="10">
-                    <tr>
-                        <td>Tên (title)</td>
-                    </tr>
-                    <tr>
-                       <td>
-                            <input type="text" name="ten" style="width: 360px; height: 30px; border: 1px solid #ccc;">
-                       </td>
-                    </tr>
-                    <tr>
-                        <td>Từ khóa SEO</td>
-                    </tr>
-                    <tr>
-                       <td>
-                            <input type="text" name="tukhoa" style="width: 360px; height: 30px; border: 1px solid #ccc;">
-                       </td>
-                    </tr>
-                    <tr>
-                        <td>Mô Tả SEO</td>
-                    </tr>
-                    <tr>
-                       <td>
-                            <input type="text" name="mota" style="width: 360px; height: 30px; border: 1px solid #ccc;">
-                       </td>
-                    </tr>
-                    <tr>
-                        <td>Ghi chú</td>
-                    </tr>
-                    <tr>
-                       <td>
-                            <textarea name="ghichu" id="" cols="42" rows="5" style="border: 1px solid #ccc;"></textarea>
-                       </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Trạng thái 
-                            <input type="radio" name="trangthai" value="on" style="margin-left: 16px;">Hoạt động
-                            <input type="radio" name="trangthai" value="off" style="margin-left: 16px;">Đang khóa
-                        </td>
-                    </tr>
-                </table>
+            <div>
+                <label for="passwd_1">Mật khẩu</label>
+                <input type="password" name="passwd" id="passwd_1">
+            </div> 
+            <div>
+                <label for="passwd_2">Nhập lại mật khẩu</label>
+                <input type="password" name="passwd" id="passwd_2">
             </div>
-        
-            <div class="footer-content">
-                <input type="reset" value="Nhập lại" style="color: #fff; background-color: #d55156; border: none; height: 28px; ">
-                <input type="submit" value="Ghi lại" style="color: #fff; background-color: rgb(29, 190, 118);border: none; height: 28px">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="">Giới tính</label>
+                <input type="radio" name="sex" value="nam">Nam
+                <input type="radio" name="sex" value="nu">Nữ
+            </div>
+            <div>
+                <label for="">Độ tuổi</label>
+                <input type="radio" name="old" value="-13">Dưới 13 tuổi
+                <input type="radio" name="old" value="13-17">Từ 13 đến 17 tuổi
+                <input type="radio" name="old" value="18-25">Từ 18 đến 25 tuổi
+                <input type="radio" name="old" value="25+">Trên 25 tuổi
+            </div>
+            <div>
+                <label for="">Sở thích của bạn</label>
+                <input type="checkbox" name="so_thich" value="music">Âm nhạc
+                <input type="checkbox" name="so_thich" value="game">Game
+                <input type="checkbox" name="so_thich" value="sport">Thể Thao
+                <input type="checkbox" name="so_thich" value="travel">Du lịch
+            </div>
+            <div>
+                <label for="">Nghề nghiệp</label>
+                <select name="Job" id="select">
+                    <option value="0">Chọn ngành nghề</option>
+                    <option value="1">Công nhân</option>
+                    <option value="2">Giáo viên</option>
+                    <option value="3">Hs-Sv</option>
+                    <option value="4">Khác</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Mô tả bản thân</label>
+                <textarea name="" id="" cols="30" rows="4"></textarea>
+            </div>
+            <div class="button">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Làm lại">
             </div>
         </form>
     </div>
-   
 </body>
 </html>
