@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab_02.1_bt7</title>
+    <style>
+        .container{
+            display: flex;
+            width: 650px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        .table-content{
+            margin-left:20px;
+        }
+        input{
+            border: 2px solid #bd9460;
+            width: 260px;
+            height: 24px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-content">
+            <img src="/practice/lab_02/img/room.png" alt="">
+        </div>
+        <form action="" class="table-content">
+            <table>
+                <tr>
+                    <th style="color: #bd9460; text-align: left; padding-top: 10px;font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Liên hệ với chúng tôi</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="ten" placeholder="Họ và tên">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="sdt" placeholder="Số điện thoại">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="noidung" placeholder="Nội dung">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Gửi" style="color: #fff; background-color: #bd9460;width: 50px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
