@@ -34,28 +34,28 @@
             <h2>Đăng ký thông tin người sử dụng</h2>
             <div>
                 <label for="name">Tên đăng nhập</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </div>
             <div>
                 <label for="passwd_1">Mật khẩu</label>
-                <input type="password" name="passwd" id="passwd_1">
+                <input type="password" name="passwd" id="passwd_1" required>
             </div> 
             <div>
                 <label for="passwd_2">Nhập lại mật khẩu</label>
-                <input type="password" name="passwd" id="passwd_2">
+                <input type="password" name="passwd" id="passwd_2" required>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
             <div>
                 <label for="">Giới tính</label>
-                <input type="radio" name="sex" value="nam">Nam
-                <input type="radio" name="sex" value="nu">Nữ
+                <input type="radio" name="sex" value="nam" required>Nam
+                <input type="radio" name="sex" value="nu" >Nữ
             </div>
             <div>
                 <label for="">Độ tuổi</label>
-                <input type="radio" name="old" value="-13">Dưới 13 tuổi
+                <input type="radio" name="old" value="-13" required>Dưới 13 tuổi
                 <input type="radio" name="old" value="13-17">Từ 13 đến 17 tuổi
                 <input type="radio" name="old" value="18-25">Từ 18 đến 25 tuổi
                 <input type="radio" name="old" value="25+">Trên 25 tuổi
@@ -69,8 +69,8 @@
             </div>
             <div>
                 <label for="">Nghề nghiệp</label>
-                <select name="Job" id="select">
-                    <option value="0">Chọn ngành nghề</option>
+                <select name="Job" id="select" required>
+                    <option value="">Chọn ngành nghề</option>
                     <option value="1">Công nhân</option>
                     <option value="2">Giáo viên</option>
                     <option value="3">Hs-Sv</option>
