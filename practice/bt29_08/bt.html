@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="margin-left: 60px;">
+                <h1>Sign Up</h1>
+                <p>It's free and alwaya will be.</p>
+            </div>
+       </header>
+       <hr width="440">
+       <section>
+            <div>
+               <form action="">
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="name"><b>First name:</b></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="last-name"><b>Last name:</b></label>
+                                </div>
+                               
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" name="last-name" id="last-name">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="email"><b>Your Email:</b></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="r-email"><b>Re-enter Email:</b></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="email" name="r-email" id="r-email">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="passwd"><b>New Password:</b></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="password" name="passwd" id="passwd">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sex"><b>I am:</b></label>
+                            </td>
+                            <td>
+                                <select name="sex" id="sex">
+                                    <option value="">Seclect sex:</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label for="birthday"><b>Birthday:</b></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="date" name="birthday" id="birthday" style="width: 120px;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div>
+                                    <a href="#">Why do need to provide birthday?</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and
+                                        that you have read and understand our <a href="#">Data Use
+                                        Policy</a> . including our  <a href="#">Cookie Use</a>.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div>
+                                    <button type="submit" style="color: #fff; background-color: #67a54b; border: none; width: 68px; height: 24px;">Sign up</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+               </form>
+       </section>
+    </div>
+</body>
+<style>
+    .container{
+            position: absolute;
+            width: 500px;
+            height: 700px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #f4f4f4;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            color: #1e2589;
+        }
+    label{
+        display: inline-block;
+        width: 150px;
+        margin: 5px 0;
+        text-align: end;
+    }
+    input{
+        width: 300px;
+        height: 20px;
+    }
+    a{
+        text-decoration: none; font-size: 16px
+    }
+    p{
+        width: 320px;
+    }
+</style>
+</html>
