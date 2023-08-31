@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .card{
+            position: absolute;
+            width: 300px;
+            height: 460px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        .img-card img{
+            width: 100%;
+        }
+        .name-card{
+            margin-top: 32px;
+           text-align: center;
+        }
+        .name-card-1{
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .price{
+            display: flex;
+            justify-content: center;
+        }
+        .price-discount{
+            margin-right: 12px;
+        }
+        .old-price{
+            text-decoration: line-through;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .sup{
+        vertical-align: super;
+        font-size: smaller
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="img-card">
+                <img src="/practice/bt31_08/images/web_-_kashmir_mo_i_copy_2_.webp" alt="img">
+            </div>
+            <div class="name-card">
+                <div class="name-card-1">
+                    <p>KASHMIR</p>
+                </div>
+                <div class="name-card-2">
+                    <p>MODISH</p>
+                </div>
+            </div>
+            <div class="price">
+                <div class="price-discount">
+                    <b>2.148.000 <sup>đ</sup></b>
+                </div>
+                <div class="old-price">
+                    <b>2.999.000 <sup>đ</sup></b>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
