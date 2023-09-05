@@ -1,0 +1,38 @@
+header{
+    height: 150px;
+    text-align: center;
+    border: 1px solid #03bb22;
+    border-radius: 4px;
+}
+div.nav{
+    height: 40px;
+    text-align: center;
+    border: 1px solid #03bb22;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body{
+    display: flex;
+    text-align: center;
+}
+.body-center{
+    height: 200px;
+    width: 50%;
+    border: 1px solid #03bb22;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+.left, .right{
+    height: 200px;
+    width: 25%;
+    border: 1px solid #03bb22;
+    border-radius: 4px;
+}
+footer{
+    height: 200px;
+    text-align: center;
+    border: 1px solid #03bb22;
+    border-radius: 4px;
+    margin-top: 10px;
+}
