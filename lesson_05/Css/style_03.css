@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    background-color: rgb(49, 7, 67);
+    border-radius:0 10px 10px 0;
+    width: 100%;
+}
+li {
+    width: 150px;
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #ccc ;
+    padding: 20px 12px;
+}
+li:last-child{
+    border-right: none;
+}
+
+/* li:nth-child(2n+1){
+    border-right: none;
+} */
+li:nth-child(1) a{
+    color: aqua;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+li:hover a{
+    color: greenyellow;
+}
