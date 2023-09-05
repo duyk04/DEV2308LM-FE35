@@ -1,0 +1,17 @@
+footer{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+}
+header{
+    height: 200px;
+}
+.header{
+    background-color: blanchedalmond;
+}
+#header{ 
+    background-color: yellow;
+}
+[data-attr="header"]{
+    background-color: brown;
+}
