@@ -33,9 +33,11 @@
 }
 #nav .subnav a{
     color: #fff;
+	
 }
 .subnav li{
     width: 95px;
+	text-align: center;
 }
 #nav .subnav {
 	display: none;
