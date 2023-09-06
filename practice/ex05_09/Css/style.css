@@ -42,9 +42,6 @@
 #nav .subnav {
 	display: none;
 	position:absolute;
-	top: 100%;
-	left: 0;
-	background-color: #fff;
 }
 #nav li:hover .subnav{
 	display: block;
