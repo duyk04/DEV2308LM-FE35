@@ -26,7 +26,6 @@
 
 #nav >li:hover > a, 
 #nav .subnav li:hover{
-	color:#000;
 	background-color: #7cff25;
 	display: block;
 
