@@ -12,8 +12,8 @@
 #nav li {
 	/* display: inline-block; */
 	position: relative;
-    background-color: cornflowerblue;
-    border-right:1px solid #0088dd ;
+    background-color: rgb(0, 0, 0);
+    border-right:1px solid #008935 ;
 }
 #nav >li>a{
 	color: #fff;
@@ -27,7 +27,7 @@
 #nav >li:hover > a, 
 #nav .subnav li:hover{
 	color:#000;
-	background-color: #ccc;
+	background-color: #7cff25;
 	display: block;
 
 }
