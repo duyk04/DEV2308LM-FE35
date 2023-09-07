@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#nav {
+    display: flex;
+}
+
+#nav li {
+	position: relative;
+    background-color: rgb(0, 0, 0);
+    border-right:1px solid #008935 ;
+}
+#nav >li>a{
+	color: #fff;
+	text-transform: uppercase;
+}
+#nav li a {
+	line-height: 46px;
+	padding: 0 24px;
+}
+
+/* sub-nav-menu */
+#nav .subnav {
+	display: none;
+	position:absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#nav >li:hover > a, 
+#nav .subnav li:hover{
+	background-color: #7cff25;
+	display: block;
+}
+#nav li:hover .subnav{
+	display: block;
+}
+#nav .subnav a{
+    color: #fff;
+}
+
+
+/* mega-menu */
+#nav .mega-menu{
+	position: absolute;
+	width: 100%; 
+	color: azure;
+	text-align: center;
+	display: none;
+}
+
+.mega-menu a{
+	color: #fff;
+}
+.mega-menu li{
+	line-height: 46px;
+}
+#nav .mega-menu li:hover{
+	background-color: #7cff25;
+}
+#nav li:hover .mega-menu{
+	background-color: #7cff25;
+	display: block;
+}
+
+/* menu-3 */
+.menu-3{
+    display: flex;
+	position: absolute;
+}
+.menu-3 .option-3{
+	position: absolute;
+	top: -46px;
+	left: 100%;
+	text-align: center;
+	display: none;
+
+}
+.menu-3 .option-3 a{
+	text-align: center;
+}
+.mega-menu .option:hover .option-3 {
+	display: block;
+}
+
+nav{
+	background-color: #000;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+.d-flex{
+	display: flex;
+}
+.logo-img{
+	width: auto;
+	height: 40px;
+}
+.logo-img-2{
+	width: 100%;
+	
+}
+
+
+/* card */
+.card{
+	width: 300px;
+	height: 460px;
+	margin: 20px 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.img-card img{
+	width: 100%;
+}
+.name-card{
+	margin-top: 32px;
+	text-align: center;
+}
+.name-card-1{
+	color: rgba(0, 0, 0, 0.6);
+}
+.name-card-2{
+	margin-top: 12px;
+}
+.price{
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+}
+.price-discount{
+	margin-right: 12px;
+}
+.old-price{
+	text-decoration: line-through;
+	color: rgba(0, 0, 0, 0.6);
+}
+.sup{
+	vertical-align: super;
+	font-size: smaller
+}
+
+
+
+.list-item{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
