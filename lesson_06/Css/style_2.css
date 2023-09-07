@@ -9,10 +9,13 @@ nav .menu-1{
     display: flex;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    position: relative;
+    
 }
 .option {
     padding: 10px 20px;
+    width: 100px;
+    text-align: center;
+    position: relative;
 }
 .option .link{
     color: aliceblue;
@@ -22,26 +25,57 @@ nav .menu-1{
     background-color: aqua;
 }
 
-nav .menu-2{
+/* menu-2 */
+.list-2{
     position: absolute;
-    text-align: center;
-    display: none;
-}
-.option-2{
-    padding: 10px;
     background-color: black;
+    width: 140px;
+    top: 100%;
+    left: 0;
+    display: none;
+    
 }
-.list-option-2{
-   
+.list-2 .option-2{
+    padding: 10px 20px;
+    width: 100px;
+    position: relative;
+    
 }
 .option-2 .link-2{
     color: aliceblue;
     font-size: 24px;
 }
-.link-2:hover,
-.option:hover .menu-2{
+.option-2:hover{
     background-color: aqua;
+}
+.option:hover .list-2{
     display: block;
+}
+
+/* menu-3 */
+.list-3{
+    position: absolute;
+    background-color: black;
+    width: 240px;
+    left: 100%;
+    top: 0;
+    display: none;
+    
+}
+.list-3 .option-3{
+    padding: 10px 20px;
+    width: 100%;
+}
+.option-3 .link-3{
+    color: aliceblue;
+    font-size: 24px;
+   
+}
+.option-3:hover{
+    background-color: aqua;
+}
+.option-2:hover .list-3{
+    display: flex;
 }
 
 
