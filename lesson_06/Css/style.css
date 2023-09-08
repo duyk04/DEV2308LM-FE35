@@ -55,8 +55,9 @@
 .mega-menu a{
 	color: #fff;
 }
-.mega-menu li{
+.mega-menu .option{
 	line-height: 46px;
+	position: relative;
 }
 #nav .mega-menu li:hover{
 	background-color: #7cff25;
@@ -70,14 +71,14 @@
 .menu-3{
     display: flex;
 	position: absolute;
+	top: 0;
+	left:100%;
+	
 }
 .menu-3 .option-3{
-	position: absolute;
-	top: -46px;
-	left: 100%;
-	text-align: center;
 	display: none;
-
+	text-align: center;
+	width: 100px;
 }
 .menu-3 .option-3 a{
 	text-align: center;
