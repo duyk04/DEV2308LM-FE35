@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 24px;
+}
+/* menu-fist */
+nav .menu-first{
+    display: flex;
+    width: 100%;
+    background-color: rgb(83, 175, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.menu-first .menu-list{
+    width: 140px;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.menu-list .link{
+    color: aliceblue;
+}
+.menu-first .menu-list:hover{
+    background-color: azure;
+}
+
+.menu-first .menu-list:hover .link{
+    color: black;
+}
+
+
+/* menu-second */
+nav .menu-second{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(83, 175, 255);
+    text-align: center;
+    display: none; 
+}
+.menu-second .menu-list-second{
+    width: 140px;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.menu-list-second .link-second{
+    color: aliceblue;
+}
+.menu-second .menu-list-second:hover{
+    background-color: azure;
+}
+
+.menu-second .menu-list-second:hover .link-second{
+    color: black;
+}
+.menu-list:hover .menu-second{
+    display: block;
+}
+
+/* menu-third */
+
+nav .menu-third{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background-color: rgb(83, 175, 255);
+    text-align: center;
+    display: none; 
+}
+.menu-third .menu-list-third{
+    width: 140px;
+    padding: 20px 20px;
+}
+
+.menu-list-third .link-third{
+    color: aliceblue;
+}
+.menu-third .menu-list-third:hover{
+    background-color: azure;
+}
+
+.menu-second .menu-list-third:hover .link-third{
+    color: black;
+}
+.menu-list-second:hover .menu-third{
+    display: block;
+}
