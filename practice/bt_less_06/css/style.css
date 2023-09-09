@@ -4,12 +4,23 @@
     list-style: none;
     text-decoration: none;
     font-size: 24px;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-image: url("../images/bg.jpg");
+    background-size: cover;
+    height: 2000px; */
+}
+nav {
+    display: flex;
+    margin: 20px 0px 20px 60px;
 }
 /* menu-fist */
 nav .menu-first{
     display: flex;
     width: 100%;
-    background-color: rgb(83, 175, 255);
+    padding-left: 40px;
+    /* background-color: rgba(0, 0, 0,0,5); */
     text-transform: uppercase;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,14 +33,15 @@ nav .menu-first{
 }
 
 .menu-list .link{
-    color: aliceblue;
+    color: rgb(128, 128, 128);
 }
 .menu-first .menu-list:hover{
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 .menu-first .menu-list:hover .link{
     color: black;
+    border-bottom: 2px solid #6e6e6e;
 }
 
 
@@ -39,7 +51,6 @@ nav .menu-second{
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgb(83, 175, 255);
     text-align: center;
     display: none; 
 }
@@ -50,17 +61,20 @@ nav .menu-second{
 }
 
 .menu-list-second .link-second{
-    color: aliceblue;
+    color: rgb(128, 128, 128);
 }
 .menu-second .menu-list-second:hover{
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 .menu-second .menu-list-second:hover .link-second{
     color: black;
+    border-bottom: 2px solid #6e6e6e;
 }
 .menu-list:hover .menu-second{
     display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    
 }
 
 /* menu-third */
@@ -70,25 +84,95 @@ nav .menu-third{
     top: 0;
     left: 100%;
     width: 100%;
-    background-color: rgb(83, 175, 255);
     text-align: center;
     display: none; 
 }
 .menu-third .menu-list-third{
     width: 140px;
     padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu-list-third .link-third{
-    color: aliceblue;
+    color: rgb(128, 128, 128);
+    
 }
 .menu-third .menu-list-third:hover{
-    background-color: azure;
+    
+    
 }
 
 .menu-second .menu-list-third:hover .link-third{
     color: black;
+    border-bottom: 2px solid #6e6e6e;
 }
 .menu-list-second:hover .menu-third{
-    display: block;
+    display: flex;
+}
+
+/* banner */
+img.img-banner {
+    width: 100%;
+    height: 600px;
+}
+
+/* card */
+.card{
+	width: 300px;
+	height: 500px;
+	margin: 20px 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	
+}
+.card:hover{
+    box-shadow: 0px 0px 20px 10px #d5d5d5;
+}
+.img-card img{
+	width: 100%;
+}
+.name-card{
+	margin-top: 32px;
+	text-align: center;
+}
+.name-card-1{
+	color: rgba(0, 0, 0, 0.6);
+}
+.name-card-2{
+	margin-top: 12px;
+}
+.price{
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+}
+.price-discount{
+	margin-right: 12px;
+}
+.old-price{
+	text-decoration: line-through;
+	color: rgba(0, 0, 0, 0.6);
+}
+.sup{
+	vertical-align: super;
+	font-size: smaller
+}
+
+.title{
+    text-align: center;
+    margin: 128px 0px;
+}
+
+.title .title-text{
+    font-size: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+
+.list-item{
+    margin-top: 40px;
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
 }
