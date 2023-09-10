@@ -6,7 +6,6 @@
     font-size: 24px;
     scroll-behavior: smooth;
 }
-
 nav {
     display: flex;
     padding: 20px 0px 20px 60px;
@@ -116,7 +115,7 @@ nav .menu-third{
 .banner{
     position: relative;
 }
-img.img-banner {
+.img-banner {
     width: 100%;
     height: 600px;
     padding-top: 112px;
