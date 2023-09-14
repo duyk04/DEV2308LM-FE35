@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 600px;
+            border: 5px solid #000;
+            position: relative;
+        }
+        @keyframes run {
+            0% {top:0%;
+                left: 0%;
+            }
+            10%{
+                top: 0%;
+                left: 300px;
+            }
+            50%{
+                top: 500px;
+                left: 300px;
+            }
+            60%{
+                top: 500px;
+                left: 0%;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: aqua;
+        }
+        .box:hover .item{
+            animation: run 8s;
+            animation-delay: 1s;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item"></div>
+    </div>
+</body>
+</html>
