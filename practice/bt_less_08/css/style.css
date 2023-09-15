@@ -1,0 +1,108 @@
+nav {
+    display: flex;
+    padding: 20px 0px 20px 60px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+}
+/* menu-fist */
+nav .logo-img{
+    width: 10vw;
+}
+nav .menu-first{
+    display: flex;
+    width: 50rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.menu-first .menu-list{
+    width: 7rem;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.menu-list .link{
+    color: rgb(128, 128, 128);
+}
+.menu-first .menu-list:hover{
+    /* background-color: azure; */
+}
+
+.menu-first .menu-list:hover .link{
+    color: black;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+
+/* menu-second */
+nav .menu-second{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none; 
+}
+.menu-second .menu-list-second{
+    width: 7rem;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.menu-list-second .link-second{
+    color: rgb(128, 128, 128);
+}
+.menu-second .menu-list-second:hover{
+    /* background-color: azure; */
+}
+
+.menu-second .menu-list-second:hover .link-second{
+    color: black;
+    border-bottom: 2px solid #6e6e6e;
+}
+.menu-list:hover .menu-second{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+/* menu-third */
+
+nav .menu-third{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    text-align: center;
+    display: none; 
+}
+.menu-third .menu-list-third{
+    width: 7rem;
+    padding: 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-list-third .link-third{
+    color: rgb(128, 128, 128);
+    
+}
+.menu-third .menu-list-third:hover{
+    
+    
+}
+
+.menu-second .menu-list-third:hover .link-third{
+    color: black;
+    border-bottom: 2px solid #6e6e6e;
+}
+.menu-list-second:hover .menu-third{
+    display: flex;
+}

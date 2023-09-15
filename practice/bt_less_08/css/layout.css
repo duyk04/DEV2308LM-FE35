@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 20px;
+}
+/* responsive */
+
+
+@media only screen and (max-width: 1060px){
+    html{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 10px;
+    }
+    nav .menu-first{
+        display: inline !important;
+        width: 17rem !important;
+        padding-left: 2rem;
+        position: absolute;
+        right: 0;
+    }
+}
