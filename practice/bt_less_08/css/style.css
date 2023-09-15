@@ -10,7 +10,7 @@ nav {
 }
 /* menu-fist */
 nav .logo-img{
-    width: 10vw;
+    width: 5vw;
 }
 nav .menu-first{
     display: flex;
@@ -79,10 +79,14 @@ nav .menu-second{
 nav .menu-third{
     position: absolute;
     top: 0;
-    right: 100%;
+    left: 100%;
     width: 100%;
     text-align: center;
     display: none; 
+}
+
+nav .menu-list:last-child .menu-third{
+    left: -100%;
 }
 .menu-third .menu-list-third{
     width: 7rem;
@@ -92,7 +96,6 @@ nav .menu-third{
 
 .menu-list-third .link-third{
     color: rgb(128, 128, 128);
-    
 }
 .menu-third .menu-list-third:hover{
     
