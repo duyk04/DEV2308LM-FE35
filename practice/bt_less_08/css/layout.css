@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -6,78 +6,98 @@
     list-style: none;
     scroll-behavior: smooth;
 }
-html{
+
+html {
     font-size: 20px;
 }
-.t-ct{
+
+.w-100{
+    width: 100%;
+}
+.t-ct {
     text-align: center;
 }
+
 /* responsive */
 
 
-@media only screen and (max-width: 1060px){
-    html{
+@media only screen and (max-width: 1060px) {
+    html {
         font-size: 15px;
-    }   
+    }
 
 }
-@media only screen and (max-width: 810px){
-    html{
+
+@media only screen and (max-width: 810px) {
+    html {
         font-size: 15px;
     }
-    nav .logo-img{
+
+    nav .logo-img {
         width: 50px;
     }
-    .title-banner{
+
+    .title-banner {
         text-align: center;
         position: absolute;
-        top:42% !important;
+        top: 42% !important;
         left: 50% !important;
-        transform: translate(-50% ,0);
+        transform: translate(-50%, 0);
     }
-    .title-2 p{
+
+    .title-2 p {
         font-size: 1.8rem !important;
     }
-    nav .menu-first{
+
+    nav .menu-first {
         width: 100%;
         display: block !important;
-       
+
     }
-    nav .menu-list:not(:first-child){
+
+    nav .menu-list:not(:first-child) {
         display: none;
     }
-    nav .menu-list{
+
+    nav .menu-list {
         position: absolute !important;
         right: 3rem;
     }
 
 }
-@media only screen and (max-width: 500px){
-    html{
+
+@media only screen and (max-width: 500px) {
+    html {
         font-size: 10px;
     }
-    nav .logo-img{
+
+    nav .logo-img {
         width: 50px;
     }
-    .title-banner{
+
+    .title-banner {
         text-align: center;
         position: absolute;
-        top:42% !important;
+        top: 42% !important;
         left: 50% !important;
-        transform: translate(-50% ,0);
+        transform: translate(-50%, 0);
     }
-    .title-2 p{
+
+    .title-2 p {
         font-size: 1.8rem !important;
     }
-    nav .menu-first{
+
+    nav .menu-first {
         width: 100%;
         display: block !important;
-       
+
     }
-    nav .menu-list:not(:first-child){
+
+    nav .menu-list:not(:first-child) {
         display: none;
     }
-    nav .menu-list{
+
+    nav .menu-list {
         position: absolute !important;
         right: 3rem;
     }

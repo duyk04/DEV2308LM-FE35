@@ -1,37 +1,38 @@
 nav {
     display: flex;
     padding: 20px 0px 20px 3rem;
-    width: 100%;
     background-color: #fff;
     position: fixed;
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #ccc;
 }
+
 /* menu-fist */
-nav .menu-first{
+nav .menu-first {
     display: flex;
-    width: 100%;
     padding-left: 2rem;
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
-.menu-first .menu-list{
+
+.menu-first .menu-list {
     width: 7rem;
     padding: 1rem 1rem;
     position: relative;
 }
 
-.menu-list .link{
+.menu-list .link {
     color: rgb(128, 128, 128);
 }
-.menu-first .menu-list:hover{
+
+.menu-first .menu-list:hover {
     /* background-color: azure; */
 }
 
-.menu-first .menu-list:hover .link{
+.menu-first .menu-list:hover .link {
     color: black;
     border-bottom: 2px solid #6e6e6e;
 }
@@ -39,112 +40,125 @@ nav .menu-first{
 
 /* menu-second */
 
-nav .menu-second{
+nav .menu-second {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
-    display: none; 
+    display: none;
 }
-.menu-second .menu-list-second{
+
+.menu-second .menu-list-second {
     width: 7rem;
     padding: 1rem 1rem;
     position: relative;
 }
 
-.menu-list-second .link-second{
+.menu-list-second .link-second {
     color: rgb(128, 128, 128);
 }
-.menu-second .menu-list-second:hover{
+
+.menu-second .menu-list-second:hover {
     /* background-color: azure; */
 }
 
-.menu-second .menu-list-second:hover .link-second{
+.menu-second .menu-list-second:hover .link-second {
     color: black;
     border-bottom: 2px solid #6e6e6e;
 }
+
 @keyframes running {
     from {
         top: 150%;
     }
+
     to {
         top: 100%;
     }
 }
-.menu-list:hover .menu-second{
+
+.menu-list:hover .menu-second {
     display: block;
     background-color: rgba(255, 255, 255, 0.9);
     animation-name: running;
     animation-duration: 1.5s;
-    
+
 }
 
 /* menu-third */
 
-nav .menu-third{
+nav .menu-third {
     position: absolute;
     top: 0;
     left: 100%;
-    width: 100%;
-    display: none; 
+    display: none;
 }
-.menu-third .menu-list-third{
+
+.menu-third .menu-list-third {
     width: 7rem;
     padding: 1rem 1rem;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.menu-list-third .link-third{
+.menu-list-third .link-third {
     color: rgb(128, 128, 128);
-    
+
 }
-.menu-second .menu-list-third:hover .link-third{
+
+.menu-second .menu-list-third:hover .link-third {
     color: black;
     border-bottom: 2px solid #6e6e6e;
 }
-.menu-list-second:hover .menu-third{
+
+.menu-list-second:hover .menu-third {
     display: flex;
 }
 
 /* banner */
-.banner{
+.banner {
     position: relative;
 }
+
 .img-banner {
-    width: 100%;
     padding-top: 5.2rem;
-    
+
 }
-.title-banner{
+
+.title-banner {
     color: #000000;
     position: absolute;
-    top:40%;
+    top: 40%;
     left: 20%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
-.title-1 p{
-   font-size: 1rem;
+
+.title-1 p {
+    font-size: 1rem;
 }
-.title-2 p{
+
+.title-2 p {
     font-size: 2.1rem;
 }
-.title-3 p{
+
+.title-3 p {
     font-size: 0.8rem;
     font-weight: 300;
 }
-.button-banner{
+
+.button-banner {
     background-color: rgba(0, 0, 0, 0);
     margin-top: 1.6rem;
     width: 9rem;
     height: 2.4rem;
     border: 1px solid #000;
 }
-.button-banner a{
+
+.button-banner a {
     font-size: 0.8rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
 }
+
 .button-banner:hover {
     background-color: #fff;
     border: #fff;
@@ -152,48 +166,56 @@ nav .menu-third{
 }
 
 /* card */
-.card{
-	width: 15rem;
-	height: 25rem;
-	margin: 1rem 1.5rem;
-	background-color: #fff;
+.card {
+    width: 15rem;
+    height: 25rem;
+    margin: 1rem 1.5rem;
+    background-color: #fff;
     position: relative;
-	/* border: 1px solid #ccc; */
-	
+    /* border: 1px solid #ccc; */
+
 }
-@keyframes showSd{
-    from{
+
+@keyframes showSd {
+    from {
         box-shadow: 0px 0px 0px 0px #dfdfdf;
     }
-    to{
+
+    to {
         box-shadow: 0px 0px 60px 10px #dfdfdf;
     }
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0px 0px 60px 10px #dfdfdf;
     animation: showSd 1s;
 }
-.img-card img{
-	width: 100%;
-    
+
+.img-card img {
+    width: 100%;
+
 }
-.img-card{
+
+.img-card {
     overflow: hidden;
 }
-@keyframes zoom{
-    from{
+
+@keyframes zoom {
+    from {
         scale: 1;
     }
-    to{
-        scale: 1,5;
+
+    to {
+        scale: 1, 5;
     }
 }
-.card .img-card img:hover{
+
+.card .img-card img:hover {
     animation: zoom 1s;
     scale: 1.5;
 }
 
-.sell-off{
+.sell-off {
     background-color: #ff5e57;
     width: 2.9rem;
     height: 1.6rem;
@@ -204,12 +226,14 @@ nav .menu-third{
     top: 1rem;
     left: 1rem;
 }
-.sell-off p{
-   color: #fff;
-   font-size: 1rem;
-   font-weight: 600;
+
+.sell-off p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
 }
-.add-item{
+
+.add-item {
     background-color: #ebebeb;
     width: 14.8rem;
     height: 2.1rem;
@@ -222,83 +246,98 @@ nav .menu-third{
     /* display: none; */
     opacity: 0;
 }
+
 @keyframes showBtn {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-.card:hover .add-item{
+
+.card:hover .add-item {
     opacity: 1;
     animation: showBtn 1s;
 }
-.add-item:hover{
+
+.add-item:hover {
     background-color: #000;
     color: #fff;
 }
-.add-item:hover p{
+
+.add-item:hover p {
     color: #fff;
 }
-.add-item p{
+
+.add-item p {
     font-size: 0.8rem;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.name-card{
-	margin-top: 1.6rem;
-	text-align: center;
-}
-.name-card p{
-    font-size: 0.8rem;
-}
-.name-card-1{
-	color: rgba(0, 0, 0, 0.6);
-}
-.name-card-2{
-	margin-top: 12px;
-}
-.price{
-	margin-top: 1.6rem;
-	display: flex;
-	justify-content: center;
-}
-.price b, sup{
-    font-size: 0.8rem;
-}
-.price-discount{
-	margin-right: 12px;
-}
-.old-price b{
-	text-decoration: line-through;
-	color: rgba(0, 0, 0, 0.6);
-}
-.sup{
-	vertical-align: super;
-	font-size: smaller;
+.name-card {
+    margin-top: 1.6rem;
+    text-align: center;
 }
 
-.title{
+.name-card p {
+    font-size: 0.8rem;
+}
+
+.name-card-1 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.name-card-2 {
+    margin-top: 12px;
+}
+
+.price {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.price b,
+sup {
+    font-size: 0.8rem;
+}
+
+.price-discount {
+    margin-right: 12px;
+}
+
+.old-price b {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.title {
     margin: 6.4rem 0px;
 }
 
-.title .title-text{
+.title .title-text {
     font-size: 1.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     letter-spacing: 8px;
 }
 
-.list-item{
+.list-item {
     margin-top: 2rem;
-	display: flex;
-	justify-content:center;
-	flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.list-item .card{
+.list-item .card {
     width: 15rem !important;
 }
 
