@@ -15,7 +15,6 @@ nav .menu-first{
     padding-left: 2rem;
     font-size: 1rem;
     text-transform: uppercase;
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
@@ -45,7 +44,6 @@ nav .menu-second{
     top: 100%;
     left: 0;
     width: 100%;
-    text-align: center;
     display: none; 
 }
 .menu-second .menu-list-second{
@@ -88,7 +86,6 @@ nav .menu-third{
     top: 0;
     left: 100%;
     width: 100%;
-    text-align: center;
     display: none; 
 }
 .menu-third .menu-list-third{
@@ -120,7 +117,6 @@ nav .menu-third{
 }
 .title-banner{
     color: #000000;
-    text-align: center;
     position: absolute;
     top:40%;
     left: 20%;
@@ -285,7 +281,6 @@ nav .menu-third{
 }
 
 .title{
-    text-align: center;
     margin: 6.4rem 0px;
 }
 
