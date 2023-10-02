@@ -19,13 +19,13 @@ function search(text) {
 var Data = [
     {
         id: 1,
-        userName: 'user1',
-        password: 'passwd1'
+        userName: 'admin',
+        password: '1234'
     },
     {
         id: 2,
-        userName: 'user2',
-        password: 'passwd2'
+        userName: 'admin1',
+        password: '12345'
     },
 ];
 function check() {
