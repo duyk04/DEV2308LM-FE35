@@ -16,11 +16,11 @@ function summary() {
     $('.sum-product .text-price .all-price').text(sum);
 }
 
-function blockMin (className) {
-    var number = $('.' + className).val();
-    if (number <=0 ) {
-        alert('ko dc nho hon 0')
-        $('.' + className + ' .quantity').val();
+function blockMin(className) {
+    var number = $('.' + className + ' .quantity').val();
+    if (number <= 0) {
+        alert("ko dc am");
+        $('.' + className + ' .quantity').val(0);
         return;
     }
 }
@@ -81,7 +81,7 @@ for (let i = 0; i < listProduct.length; i++) {
                     </div>
                 </div>`;
     $('.list-item').append(view);
-}   
+}
 
 // btvn tạo ds tin tức dạng arrayObject
 // hiển thị all tin tức lên giao diện với các tham số thuộc tính tương ứng
