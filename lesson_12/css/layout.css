@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+html{
+    font-size: 15px;
+}
+.title-page{
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+    font-size: 3rem;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
