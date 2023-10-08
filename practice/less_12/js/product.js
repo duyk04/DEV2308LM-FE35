@@ -167,7 +167,7 @@ function sapXepTangDan() {
 
     for (let i = 0; i < listItems.length; i++) {
         var item = `
-            <div class="col-3" style="display: none;">
+            <div class="col-3" style="opacity: 0;">
                 <div class="card mb-5">
                     <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                     <div class="card-body">
@@ -186,7 +186,7 @@ function sapXepTangDan() {
     var delay = 100; // Độ trễ giữa các mục (miligiây)
     var items = listContainer.find(".col-3");
     items.each(function (index) {
-        $(this).delay(index * delay).fadeIn();
+        $(this).delay(index * delay).animate({ opacity: 1 }, 1500); // 800 miligiây cho thời gian hiệu ứng
     });
 }
 function sapXepGiamDan() {
@@ -218,7 +218,7 @@ function sapXepGiamDan() {
 
     for (let i = 0; i < listItems.length; i++) {
         var item = `
-            <div class="col-3" style="display: none;">
+            <div class="col-3" style="opacity: 0;">
                 <div class="card mb-5">
                     <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                     <div class="card-body">
@@ -237,7 +237,7 @@ function sapXepGiamDan() {
     var delay = 100; // Độ trễ giữa các mục (miligiây)
     var items = listContainer.find(".col-3");
     items.each(function (index) {
-        $(this).delay(index * delay).fadeIn();
+        $(this).delay(index * delay).animate({ opacity: 1 }, 1500); // 800 miligiây cho thời gian hiệu ứng
     });
 }
 function sapXep() {
