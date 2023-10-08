@@ -59,8 +59,8 @@ var listItems = [
 ]
 
 for (let i = 0; i < listItems.length; i++) {
-    var item = `<div class="col-3">
-                    <div class="card mb-5">
+    var item = `<div class="col-3 mb-5">
+                    <div class="card ">
                         <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${listItems[i].name}</h5>
@@ -75,7 +75,7 @@ for (let i = 0; i < listItems.length; i++) {
 function showItems(size) {
     $("#list-item").html('');
     for (let i = 0; i < size && i < listItems.length; i++) {
-        var item = `<div class="col-3">
+        var item = `<div class="col-3 mb-5">
                     <div class="card">
                         <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                         <div class="card-body">
@@ -100,7 +100,7 @@ function search() {
     // 'dev master' != " dev , master" ==> repalceAll(" ", " ")
     for (let i = 0; i < listItems.length; i++) {
         if (listItems[i].name.toLowerCase().includes(title.toLowerCase())) {
-            var item = `<div class="col-3">
+            var item = `<div class="col-3 mb-5">
                     <div class="card">
                         <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                         <div class="card-body">
@@ -128,7 +128,7 @@ function checkPrice() {
     var priceMax = $(".search-price-max").val();
     for (let i = 0; i < listItems.length; i++) {
         if (parseInt(priceMin) <= listItems[i].price && parseInt(priceMax) >= listItems[i].price) {
-            var item = `<div class="col-3">
+            var item = `<div class="col-3 mb-5">
                     <div class="card">
                         <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                         <div class="card-body">
@@ -167,8 +167,8 @@ function sapXepTangDan() {
 
     for (let i = 0; i < listItems.length; i++) {
         var item = `
-            <div class="col-3" style="opacity: 0;">
-                <div class="card mb-5">
+            <div class="col-3 mb-5" style="opacity: 0;">
+                <div class="card">
                     <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${listItems[i].name}</h5>
@@ -218,8 +218,8 @@ function sapXepGiamDan() {
 
     for (let i = 0; i < listItems.length; i++) {
         var item = `
-            <div class="col-3" style="opacity: 0;">
-                <div class="card mb-5">
+            <div class="col-3 mb-5" style="opacity: 0;">
+                <div class="card">
                     <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${listItems[i].name}</h5>
