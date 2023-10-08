@@ -67,6 +67,7 @@ function showItems(size) {
                         <div class="card-body">
                             <h5 class="card-title">${listItems[i].name}</h5>
                             <p class="card-text">${listItems[i].content}</p>
+                            <p>Giá: ${listItems[i].price}</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
@@ -91,6 +92,7 @@ function search() {
                         <div class="card-body">
                             <h5 class="card-title">${listItems[i].name}</h5>
                             <p class="card-text">${listItems[i].content}</p>
+                            <p>Giá: ${listItems[i].price}</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
