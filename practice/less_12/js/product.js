@@ -5,6 +5,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 200000,
+        class: "Nam",
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 500000,
+        class: "Nữ",
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 900000,
+        class: "Nam",
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 100000,
+        class: "Nam",
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 400000,
+        class: "Nữ",
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 300000,
+        class: "Nam",
     },
     {
         id: 7,
@@ -47,6 +53,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 200000,
+        class: "Nữ",
     },
     {
         id: 8,
@@ -54,6 +61,7 @@ var listItems = [
         img: "https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=1920&q=75",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, debitis.",
         price: 900000,
+        class: "Nữ",
     },
 
 ]
@@ -240,12 +248,96 @@ function sapXepGiamDan() {
         $(this).delay(index * delay).animate({ opacity: 1 }, 1500); // 800 miligiây cho thời gian hiệu ứng
     });
 }
+function class1() {
+    var listContainer = $("#list-item");
+    listContainer.empty(); // Xóa nội dung cũ
+    var temp = "Nam";
+    for (let i = 0; i < listItems.length; i++) {
+        if (temp === listItems[i].class) {
+            var item = `
+            <div class="col-3 mb-5" style="opacity: 0;">
+                <div class="card">
+                    <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${listItems[i].name}</h5>
+                        <p class="card-text">${listItems[i].content}</p>
+                        <p>Phân loại: ${listItems[i].class}</p>
+                        <p>Giá: ${listItems[i].price}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        `;
+            listContainer.append(item);
+        }
+    }
+
+    // Hiển thị từ từ từng thẻ một
+    var delay = 100; // Độ trễ giữa các mục (miligiây)
+    var items = listContainer.find(".col-3");
+    items.each(function (index) {
+        $(this).delay(index * delay).animate({ opacity: 1 }, 1500); // 800 miligiây cho thời gian hiệu ứng
+    });
+}
+function class2() {
+    var listContainer = $("#list-item");
+    listContainer.empty(); // Xóa nội dung cũ
+    var temp = "Nữ";
+    for (let i = 0; i < listItems.length; i++) {
+        if (temp === listItems[i].class) {
+            var item = `
+            <div class="col-3 mb-5" style="opacity: 0;">
+                <div class="card">
+                    <img src="${listItems[i].img}" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${listItems[i].name}</h5>
+                        <p class="card-text">${listItems[i].content}</p>
+                        <p>Phân loại: ${listItems[i].class}</p>
+                        <p>Giá: ${listItems[i].price}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        `;
+            listContainer.append(item);
+        }
+    }
+
+    // Hiển thị từ từ từng thẻ một
+    var delay = 100; // Độ trễ giữa các mục (miligiây)
+    var items = listContainer.find(".col-3");
+    items.each(function (index) {
+        $(this).delay(index * delay).animate({ opacity: 1 }, 1500); // 800 miligiây cho thời gian hiệu ứng
+    });
+}
 function sapXep() {
     var value = $('#sapXep').val();
-    if (parseInt(value) == 1) {
-        sapXepTangDan()
+    switch (parseInt(value)) {
+        case 1:
+            sapXepTangDan();
+            break;
+        case 2:
+            sapXepGiamDan()
+            break
+        case 3:
+            class1()
+            break
+        case 4:
+            class2()
+            break
+        default:
+            break;
     }
-    if (parseInt(value) == 2) {
-        sapXepGiamDan()
-    }
+    // if (parseInt(value) == 1) {
+
+    // }
+    // if (parseInt(value) == 2) {
+
+    // }
+    // if (parseInt(value) == 3) {
+    //     class1()
+    // }
+    // if (parseInt(value) == 4) {
+    //     class2()
+    // }
 }
