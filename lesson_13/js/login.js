@@ -73,7 +73,7 @@ function logOut() {
 }
 
 $.ajax({
-    url: "demo_test.txt", 
+    url: "http://priceboard.bsc.com.vn/Acc/AT", 
         success: function (result) {
         console.log(result)
     }
